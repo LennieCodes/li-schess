@@ -2,7 +2,6 @@
   <div class="board-view">
     <div class="schess-buttons">
       <span :class="{ active: elephantOpponentEnabled }">elephant</span>
-      </span>
       <span :class="{ active: hawkOpponentEnabled }">hawk</span>
     </div>
     <div id="board-wrapper">
@@ -20,10 +19,10 @@
 <script>
 import { mapGetters } from "vuex";
 import SChess from "schess.js";
-import Chessground from "cg/dist/chessground";
 import Promotion from "@/components/Promotion";
 import SPieceSelector from "@/components/SPieceSelector";
 
+const Chessground = require("chessground").Chessground;
 export default {
 	name: "Board",
 	components: {

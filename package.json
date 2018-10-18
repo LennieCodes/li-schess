@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
-    "start": "node build/dev-server.js",
+    "serve": "node build/dev-server.js",
     "server": "node server/server.js",
     "build": "node build/build.js",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
@@ -25,7 +25,8 @@
     "vue": "^2.4.2",
     "vue-router": "^3.0.1",
     "vue-socket.io": "^2.1.1-a",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "chessground": "git+https://github.com/LennieCodes/chessground.git"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.2.14",

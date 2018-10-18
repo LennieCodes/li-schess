@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import Chessground from "cg/dist/chessground";
 
+const Chessground = require("chessground").Chessground; 
 export default {
 	name: "BoardMini",
 	props: ["fen", "white", "black", "onBoardClick"],
